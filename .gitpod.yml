@@ -3,7 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - before: |
+  - init: |
       #Install PlatformIO
       python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
       export PATH=$PATH:/home/gitpod/.platformio/penv/bin
@@ -16,5 +16,4 @@ tasks:
       . ./install.sh esp32,esp32s2,esp32s3
       . ~/esp/esp-idf/export.sh
       alias build='idf.py build
-  - init: echo Hello World from Init!
 
