@@ -17,4 +17,4 @@ tasks:
       . ~/esp/esp-idf/export.sh
       alias build='idf.py build
   - init: echo Hello World from Init!
-  - command: echo Hello World from Command!
+
